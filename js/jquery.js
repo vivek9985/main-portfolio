@@ -85,7 +85,7 @@ $(document).ready(function(){
             'color': '#fffaf1'
         });
         $('.mode').css('color','#fffaf1');
-        $('h1.main-title').css('background-image', 'url(/img/dark13.jpg)');
+        $('h1.main-title').css('background-image', 'url(./img/dark13.jpg)');
     });
     $('.light-image').click(function(){
         $('body').css('background','#fffaf1');
@@ -95,7 +95,7 @@ $(document).ready(function(){
         });
         $('.mode').css('color','#1c1c1c');
         $('.bg').css('color','#1c1c1c');
-        $('h1.main-title').css('background-image', 'url(/img/13.jpg)');
+        $('h1.main-title').css('background-image', 'url(./img/13.jpg)');
     });
     // ---------------------------DARK MODE STYLE END HERE-----------------------------
     $('.one-dot').click(function(){

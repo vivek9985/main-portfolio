@@ -319,7 +319,7 @@ body{
 .test .img-box{
     width: 500px;
     height: 300px;
-    background-image: url(/practice2/img\ and\ video/cropped.jpg);
+    background-image: url(../img\ and\ video/cropped.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
