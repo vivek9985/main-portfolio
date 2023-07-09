@@ -377,7 +377,7 @@ h1.main-title{
     line-height: 80px;
     text-transform: capitalize;
     -webkit-text-stroke: 1px transparent;
-    background-image: url(./img/13.jpg);
+    background-image: url(../img/13.jpg);
     background-position:  center;
     background-size:  cover;;
     -webkit-background-clip: text;
