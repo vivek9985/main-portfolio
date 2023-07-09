@@ -1,0 +1,31 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.about-me-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.img-me img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  padding: 5px;
+}
+.my-name{
+  text-align: center;
+  font-size: 30px;
+  font-family: fantasy;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  color: #000000;
+}
+.my-profession{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px;
+}

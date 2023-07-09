@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: rgb(235, 243, 231);
+}
+.clip{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 238, 240);
+}
+.clip-section{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-image: url(https://t3.ftcdn.net/jpg/04/17/50/86/240_F_417508696_YTDWGWbpHQ8zlXQ4h7GTvP8lrvxfNtJm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.clip-container{
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    clip-path: circle(15% at 93% 10%);
+}
+.clip-section:hover .clip-container{
+    clip-path: circle(100%);
+}
+.clip-section:hover .card{
+    color: #1c1c1c;
+}
+.clip-section:hover p{
+    color: #1c1c1c;
+}
+.clip-section:hover h3{
+    outline: 2px dotted #1d1d1d;
+    offset: 20px;
+    border-radius: 50px;
+}
+.clip-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    margin: auto;
+    background-color: transparent;
+}
+.card{
+    text-align: center;
+    font-family: 'Poppins';
+    top: 0;
+    padding: 0 30px;
+    transition: all .9s ease;
+    color:rgb(255, 255, 255);
+}
+.clip-section p{
+    font-size: 13px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    transition: all .9s ease;
+}
+.clip-section h3{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 900;
+    color: rgb(230, 6, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+
+.card-section{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    width: 330px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+.all-card{
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+}
+.card-1{
+    width: 100%;
+    position: relative;
+}
+.card-1 video{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    object-fit: cover;
+}
+.card-1::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 66px;
+    left: -1px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -6px 6px grey;
+    z-index: 10;
+}
+.card-1::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    left: 66px;
+    bottom: -1px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -6px 6px gray;
+    z-index: 10;
+}
+.card-2{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.card-2::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    top: 66px;
+    left: -1px;
+    border-top-left-radius: 20px;
+    box-shadow: -6px -6px gray;
+    z-index: 10;
+}
+.card-2::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    left: 66px;
+    top: -1px;
+    border-top-left-radius: 20px;
+    box-shadow: -6px -6px gray;
+    z-index: 10;
+}
+.card-2 .card-2-content{
+    position: absolute;
+    inset: 0;
+    padding: 25px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.card-2 .card-2-content h2{
+    width: 100%;
+    padding-left: 100px;
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.card-2 .card-2-content h2 span{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgb(230, 24, 24);
+}
+.card-2 .card-2-content ul{
+    position: relative;
+    top: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    padding: 0 10px;
+}
+.card-2 .card-2-content ul li{
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    color: #636363;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.card-2 .card-2-content ul li span{
+    font-size: 20px;
+    color: #1d1d1d;
+}
+.card-2 .card-2-content ul li:not(:last-child){
+    border-right: 1px solid #a5a5a5;
+}
+.card-2 .card-2-content button{
+    position: relative;
+    top: 10px;
+    padding: 8px 22px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 7px solid gray;
+    box-shadow: 0 0 0 10px #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.card-2 .card-2-content button:hover{
+    letter-spacing: 5px;
+    color: #000;
+    background-color: #fff0c7;
+}
+.card-2 .card-2-content button::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    transform: rotate(-8deg);
+    position: absolute;
+    bottom: -2px;
+    left: -28px;
+    border-top-right-radius: 20px;
+    box-shadow: 6px -6px rgb(255, 255, 255);
+    z-index: 5;
+}
+.card-2 .card-2-content button::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    transform: rotate(8deg);
+    position: absolute;
+    bottom: -2px;
+    right: -28px;
+    border-top-left-radius: 20px;
+    box-shadow: -6px -6px rgb(255, 255, 255);
+    z-index: 5;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    position: absolute;
+    left: -80px;
+    border-radius: 50%;
+    border: 10px solid gray;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.test{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(236, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test .img-box{
+    width: 500px;
+    height: 300px;
+    background-image: url(/practice2/img\ and\ video/cropped.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 10s;
+}
+
+.test .img-box:hover{
+    background-position: bottom;
+}
+
+
+
+
+
+
+
+
