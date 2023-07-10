@@ -38,11 +38,11 @@ body{
     background-clip: content-box;
 }
 .all-btn{
-    padding: 10px 17px;
+    padding: 12px 20px;
     border-radius: 100px;
     border: none;
     background-color: rgb(203, 173, 243);
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
@@ -249,9 +249,10 @@ nav ul li a{
     top: 0;
     bottom: 0;
     margin: auto;
+    left: 20px;
     background: linear-gradient(290deg,var(--purple) 35%,var(--pink) 85%);
     padding: 16px 8px;
-    border-radius: 5px 30px 30px 5px;
+    border-radius: 50px;
     z-index: 1;
 }
 .socials{
@@ -413,6 +414,7 @@ h1.main-title{
 }
 .hireme-button{
     margin-top: 30px;
+    padding: 12px 23px;
 }
 
 /*======== HERO LEFT SECTION END  ========*/
