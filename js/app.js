@@ -1,114 +1,114 @@
-
-particlesJS('particles-js',
+particlesJS(
+  "particles-js",
 
   {
-    "particles": {
-      "number": {
-        "value": 12,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ff0000"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
+    particles: {
+      number: {
+        value: 4,
+        density: {
+          enable: true,
+          value_area: 800,
         },
-        "polygon": {
-          "nb_sides": 5
+      },
+      color: {
+        value: "#ff00ff",
+      },
+      shape: {
+        type: "image",
+        stroke: {
+          width: 0,
+          color: "#000000",
         },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
+        polygon: {
+          nb_sides: 5,
+        },
+        image: {
+          src: "../img/react.png",
+          width: 110,
+          height: 100,
+        },
       },
-      "opacity": {
-        "value": 0.9,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
       },
-      "size": {
-        "value": 0,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 100,
-          "size_min": 0.1,
-          "sync": false
-        }
+      size: {
+        value: 20,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 20,
+          size_min: 0.1,
+          sync: false,
+        },
       },
-      "line_linked": {
-        "enable": true,
-        "distance": 400,
-        "color": "#ff00ff",
-        "opacity": 0.7,
-        "width": 1
+      line_linked: {
+        enable: false,
+        distance: 600,
+        color: "#ff00ff",
+        opacity: 0.4,
+        width: 1,
       },
-      "move": {
-        "enable": true,
-        "speed": 12,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
     },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false,
-          "mode": "repulse"
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: false,
+          mode: "repulse",
         },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
+        onclick: {
+          enable: false,
+          mode: "push",
         },
-        "resize": true
+        resize: true,
       },
-      "modes": {
-        "grab": {
-          "distance": 800,
-          "line_linked": {
-            "opacity": 1
-          }
+      modes: {
+        grab: {
+          distance: 800,
+          line_linked: {
+            opacity: 1,
+          },
         },
-        "bubble": {
-          "distance": 800,
-          "size": 80,
-          "duration": 2,
-          "opacity": 0.8,
-          "speed": 3
+        bubble: {
+          distance: 800,
+          size: 80,
+          duration: 2,
+          opacity: 0.3,
+          speed: 3,
         },
-        "repulse": {
-          "distance": 400,
-          "duration": 0.4
+        repulse: {
+          distance: 400,
+          duration: 0.4,
         },
-        "push": {
-          "particles_nb": 4
+        push: {
+          particles_nb: 4,
         },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
+        remove: {
+          particles_nb: 2,
+        },
+      },
     },
-    "retina_detect": true
+    retina_detect: true,
   }
 );

@@ -13,7 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  background-color: #fffaf1;
+  background: #fffaf1;
   user-select: none;
 }
 :root {
@@ -197,13 +197,12 @@ a {
 /* //////// MOBILE NAV MENU SECTION END HERE//////// */
 
 .location-container {
-  position: fixed;
-  width: 110px;
-  height: 40px;
+  position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 8px;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 20px;
   bottom: 60px;
   right: 0px;
   font-size: 10px;
@@ -212,7 +211,7 @@ a {
   border-radius: 100px 5px 5px 100px;
 }
 .location-icon {
-  font-size: 25px;
+  font-size: 29px;
   color: var(--yellow);
   animation: rotate 10s infinite linear;
   margin-left: -10px;
@@ -234,7 +233,7 @@ a {
   justify-content: space-around;
   background-color: var(--yellow);
   transform: rotate(90deg);
-  position: fixed;
+  position: absolute;
   top: 180px;
   right: -70px;
   padding: 2px 8px;
@@ -311,22 +310,17 @@ a {
   z-index: 1;
   right: 20px;
   bottom: 20px;
-  transition: all 0.9s ease;
-}
-.arrow-btn a {
-  padding: 7px;
-  padding-left: 9px;
-  border-radius: 50px;
-  text-decoration: none;
   background: var(--yellow);
-  color: black;
-  font-size: 15px;
+  border-radius: 5px;
 }
 .arrow-btn a {
-  animation: arrow 3s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+  padding: 8px;
+  color: black;
+  font-size: 18px;
+  animation: arrow 2s ease-out infinite;
 }
 @keyframes arrow {
-  0% {
+  10% {
     transform: translateY(0);
   }
   20% {
@@ -341,9 +335,6 @@ a {
   60% {
     transform: translateY(4px);
   }
-  100% {
-    transform: translateY(0);
-  }
 }
 /* ----------------------------CLICK TO TOP BUTTON STYLE END HERE------------------------------- */
 
@@ -354,11 +345,12 @@ a {
   justify-content: space-around;
   padding-top: 100px;
   padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 /*======== HERO LEFT SECTION START ========*/
 .left-section {
   width: 55%;
-  padding-left: 50px;
 }
 .profile-container {
   position: relative;
@@ -383,44 +375,44 @@ a {
   bottom: 0;
   margin: auto;
   border-radius: 50%;
-  object-fit: cover;  
+  object-fit: cover;
+  background-color: var(--orange);
 }
 .active-text {
-    position: absolute;
-    top: 40%;
-    right: -85px;
-    background: #d1c1c1;
-    color: rgb(23, 160, 34);
-    font-size: 10px;
-    font-weight: 900;
-    padding: 7px 10px;
-    border-radius: 100px;
-    opacity: 0.7;
-    z-index: 9000000;
-    display: none;
+  position: absolute;
+  top: 40%;
+  right: -85px;
+  background: #d1c1c1;
+  color: rgb(23, 160, 34);
+  font-size: 10px;
+  font-weight: 900;
+  padding: 7px 10px;
+  border-radius: 100px;
+  opacity: 0.7;
+  z-index: 9000000;
+  display: none;
 }
 .active-text::after {
-    content: "";
-    width: 17px;
-    height: 17px;
-    background: #d1c1c1;
-    border-radius: 6px 0;
-    z-index: -9;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: -5px;
-    transform: rotate(45deg);
+  content: "";
+  width: 17px;
+  height: 17px;
+  background: #d1c1c1;
+  border-radius: 6px 0;
+  z-index: -9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -5px;
+  transform: rotate(45deg);
 }
 .profile-container:hover .active-text {
-    display: block;
+  display: block;
 }
 .active-dot {
   position: absolute;
   bottom: 1px;
   right: 1px;
-  z-index: 99999999;
 }
 .dot {
   width: 10px;
@@ -431,21 +423,21 @@ a {
   cursor: pointer;
 }
 .active-dot span {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: inherit;
-    border-radius: inherit;
-    opacity: 0.8;
-    animation: active 1.5s ease-out infinite;
-    animation-delay: calc(0.5s * var(--i));
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: inherit;
+  border-radius: inherit;
+  opacity: 0.8;
+  animation: active 1.5s ease-out infinite;
+  animation-delay: calc(0.5s * var(--i));
+}
+@keyframes active {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
   }
-  @keyframes active {
-    100% {
-      opacity: 0;
-      transform: scale(2.5);
-    }
-  }
+}
 
 h2.upper-subtitle {
   color: #1c1c1c;
@@ -464,13 +456,16 @@ h1.main-title {
   word-spacing: 0px;
   letter-spacing: 8px;
   line-height: 80px;
-  text-transform: capitalize;
   -webkit-text-stroke: 1px transparent;
   background-image: url(../img/13.jpg);
   background-position: center;
   background-size: cover;
   -webkit-background-clip: text;
   animation: animate 1000s linear infinite;
+}
+.v {
+  font-size: 120px;
+  margin-left: 8px;
 }
 @keyframes animate {
   100% {
@@ -493,7 +488,6 @@ h1.main-title {
 .description-me {
   color: #1c1c1c;
   font-size: 14px;
-  text-align: justify;
   font-weight: 600;
   word-spacing: 1px;
   letter-spacing: 1px;
@@ -502,7 +496,7 @@ h1.main-title {
 }
 .hireme-button {
   margin-top: 30px;
-  padding: 12px 23px;
+  padding: 11px 23px;
 }
 
 /*======== HERO LEFT SECTION END  ========*/
@@ -512,7 +506,6 @@ h1.main-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 30px;
 }
 .right-content {
   display: flex;
@@ -524,7 +517,7 @@ h1.main-title {
   height: 330px;
   background: var(--yellow);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  animation: vivek 5s ease-in-out infinite;
+  animation: vivek 3s ease-in-out infinite;
 }
 @keyframes vivek {
   0% {
@@ -1239,6 +1232,7 @@ img.portfolio-img:hover {
   font-weight: 600;
   color: var(--green);
 }
+
 .cursor-outline {
   position: fixed;
   width: 9px;
@@ -1253,14 +1247,25 @@ img.portfolio-img:hover {
 }
 .cursor-point {
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   top: 0;
   right: 0;
   z-index: 999999999;
   pointer-events: none;
   transform: translate(-50%, -50%);
+  animation: cursor linear 4s infinite;
   border-radius: 50%;
-  border: 1px dashed white;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
+}
+@keyframes cursor {
+  0% {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(1);
+  }
+  100% {
+    filter: invert(0);
+  }
 }
