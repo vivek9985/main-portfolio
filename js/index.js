@@ -11,9 +11,9 @@ var typed = new Typed(".typing_text", {
   loop: true,
   cursorChar: "|️",
 });
-// var cursorOutline = document.querySelector(".cursor-outline");
-// var cursorPoint = document.querySelector(".cursor-point");
-// document.addEventListener("mousemove", (e) => {
-//   cursorOutline.style.cssText = cursorPoint.style.cssText =
-//     "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-// });
+var cursorOutline = document.querySelector(".cursor-outline");
+var cursorPoint = document.querySelector(".cursor-point");
+document.addEventListener("mousemove", (e) => {
+  cursorOutline.style.cssText = cursorPoint.style.cssText =
+    "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});
