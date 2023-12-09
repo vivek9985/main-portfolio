@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    $(window).scroll(function(){
-        if($(window).scrollTop()){
-            $("header").addClass("sticky-menu");
-            $('.arrow-btn').fadeIn();
-        }
-        else{
-            $("header").removeClass("sticky-menu");
-            $('.arrow-btn').fadeOut();
-        }
-    });
+    // $(window).scroll(function(){
+    //     if($(window).scrollTop()){
+    //         $("header").addClass("sticky-menu");
+    //         $('.arrow-btn').fadeIn();
+    //     }
+    //     else{
+    //         $("header").removeClass("sticky-menu");
+    //         $('.arrow-btn').fadeOut();
+    //     }
+    // });
     // ---------------------------PROJECT SECTION STYLE START HERE--------------------
     $(".flowers").click(function(){
         $("#container-1").hide();
@@ -79,7 +79,9 @@ $(document).ready(function(){
 
     // ---------------------------DARK MODE STYLE START HERE--------------------------- 
     $('.dark-image').click(function(){
-        $('body').css('background','black');
+        $('body').css({
+            'background':'#1c1c1c',
+        });
         $('.bg').css({
             'background':'#1c1c1c',
             'color': '#fffaf1'

@@ -8,548 +8,590 @@
     <title>Mr. Vivek - Portfolio</title>
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" media="screen" href="./css/style.css" />
     <link rel="stylesheet" media="screen" href="./css/responsive.css" />
   </head>
   <body>
-    <div id="particles-js"></div>
+    <main id="main">
+      <div id="particles-js"></div>
 
-    <!------------------------------------------/////HEADER SECTION START HERE////////---------------------------------------------->
-    <header id="top">
-      <div class="site-logo all">
-        <h1 class="logo">
-          <a href="/" class="mode"
-            ><span class="first-v">V</span><span class="i">i</span
-            ><span class="mid-v">v</span>ek<span class="fullstop">.</span></a
-          >
-        </h1>
-      </div>
-      <div data-aos="fade-up">
-        <nav class="main-menu">
-          <ul class="nav-menu">
+      <!------------------------------------------/////HEADER SECTION START HERE////////---------------------------------------------->
+      <header id="top">
+        <div class="site-logo all">
+          <h1 class="logo">
+            <a href="/" class="mode"
+              ><span class="first-v">V</span><span class="i">i</span
+              ><span class="mid-v">v</span>ek<span class="fullstop">.</span></a
+            >
+          </h1>
+        </div>
+        <div data-aos="fade-up">
+          <nav class="main-menu">
+            <ul class="nav-menu">
+              <li>
+                <a href="" class="mode all">home</a>
+              </li>
+              <li><a href="" class="mode all">portfolio</a></li>
+              <li><a href="" class="mode all">services</a></li>
+              <li><a href="" class="mode all">contact</a></li>
+              <li><a href="" class="mode all">about</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contact">
+          <a href="#"
+            ><button class="contact-button all-btn" type="button">
+              contact<span><i class="fa fa-comment"></i></span></button
+          ></a>
+        </div>
+        <div class="menu-bar"><i class="fa fa-bars"></i></div>
+        <!-- dark mode  -->
+        <div class="darkmode">
+          <img
+            src="./img/darkmode/light.png"
+            class="light-image bothimg"
+            alt=""
+          />
+          <img
+            src="./img/darkmode/dark.png"
+            class="dark-image bothimg"
+            alt=""
+          />
+        </div>
+      </header>
+      <!------------------------------------------////////HEADER SECTION END HERE////////---------------------------------------------->
+
+      <!--//////// MOBILE NAV MENU SECTION START HERE////////-->
+      <section class="mobile-menu-section bg">
+        <div class="mobile-menu-section-container">
+          <ul class="mobile-menu">
             <li>
               <a href="/" class="mode all">home</a>
             </li>
-            <li><a href="clinic.html" class="mode all">portfolio</a></li>
+            <li><a href="./clinic.html" class="mode all">portfolio</a></li>
             <li><a href="#service" class="mode all">services</a></li>
             <li><a href="#contact" class="mode all">contact</a></li>
-            <li><a href="practice2.html" class="mode all">about</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="contact">
-        <a href="#"
-          ><button class="contact-button all-btn" type="button">
-            contact<span><i class="fa fa-comment"></i></span></button
-        ></a>
-      </div>
-      <div class="menu-bar"><i class="fa fa-bars"></i></div>
-    </header>
-    <!------------------------------------------////////HEADER SECTION END HERE////////---------------------------------------------->
-
-    <!--//////// MOBILE NAV MENU SECTION START HERE////////-->
-    <section class="mobile-menu-section bg">
-      <div class="mobile-menu-section-container">
-        <ul class="mobile-menu">
-          <li>
-            <a href="/" class="mode all">home</a>
-          </li>
-          <li><a href="./clinic.html" class="mode all">portfolio</a></li>
-          <li><a href="#service" class="mode all">services</a></li>
-          <li><a href="#contact" class="mode all">contact</a></li>
-          <li><a href="./about.html" class="mode all">about</a></li>
-        </ul>
-      </div>
-    </section>
-    <!--//////// MOBILE NAV MENU SECTION END HERE////////-->
-
-    <!------------------------------------------////////HERO SECTION START HERE////////---------------------------------------------->
-    <section class="hero-section">
-      <div class="left-section">
-        <div class="hero">
-          <div class="profile-container" oncontextmenu="return false">
-            <img class="text-circle" src="./img/text.png" alt="image" />
-            <img class="img-vivek" src="./img/vivekfull.png" alt="image" />
-            <div class="active-text">
-              <p>active now</p>
-            </div>
-            <div class="active-dot">
-              <div class="dot">
-                <span style="--i: 0"></span>
-                <span style="--i: 1"></span>
-              </div>
-            </div>
-          </div>
-          <h2 class="upper-subtitle mode">hi, my name is</h2>
-          <h1 class="main-title"><span class="v">v</span>ivek Anando</h1>
-          <div class="autotyping">I'm a <span class="typing_text"></span></div>
-          <p class="description-me mode">
-            I'm a front end web developer who is passionate about making error
-            free website with 100% client satisfaction.I love to solve
-            real-world problems.I am strategic, goal oriented and always work
-            with an end goal in mind.
-          </p>
-        </div>
-        <div>
-          <a href="#"
-            ><button class="hireme-button all-btn box" type="button">
-              hire me
-            </button></a
-          >
-        </div>
-      </div>
-      <div class="right-section" oncontextmenu="return false">
-        <div class="right-content">
-          <img src="./img/vivekfull.png" alt="image" />
-        </div>
-      </div>
-    </section>
-    <!--------CLICK TO DOWN BUTTON START HERE-------->
-    <div class="scroll-to-bottom">
-      <a href="#footer">
-        <div class="icon-box">
-          <div class="icon"></div>
-        </div>
-      </a>
-    </div>
-    <!--------CLICK TO BOTTOM BUTTON END HERE-------->
-    <!------------------------------------------////////HERO SECTION END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////SKILL SECTION START HERE////////---------------------------------------------->
-    <section class="skill-section">
-      <h1 class="skill-section-title all-section-title">skills</h1>
-      <div class="skill-content">
-        <div class="skill-left-section">
-          <h1 class="progress-title">CMS <span>KNOWLEDGE</span></h1>
-          <div class="skill-container">
-            <div class="progress-bar">
-              <ul class="progress">
-                <li class="wp">
-                  <span class="left">WORDPRESS</span
-                  ><span class="right">85%</span>
-                </li>
-                <li class="ep">
-                  <span class="left">ELEMENTOR PRO</span
-                  ><span class="right">90%</span>
-                </li>
-                <li class="divi">
-                  <span class="left">DIVI</span><span class="right">85%</span>
-                </li>
-                <li class="vc">
-                  <span class="left">WOOCOMMERCE</span
-                  ><span class="right">80%</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="skill-right-section">
-          <h1 class="progress-title">CODING <span>KNOWLEDGE</span></h1>
-          <div class="skill-container">
-            <div class="progress-bar">
-              <ul class="progress">
-                <li class="html">
-                  <span class="left">HTML</span><span class="right">95%</span>
-                </li>
-                <li class="css">
-                  <span class="left">CSS & SASS</span
-                  ><span class="right">90%</span>
-                </li>
-                <li class="tailwind">
-                  <span class="left">TAILWIND</span
-                  ><span class="right">80%</span>
-                </li>
-                <li class="js">
-                  <span class="left">JAVASCRIPT</span
-                  ><span class="right">70%</span>
-                </li>
-                <li class="jquery">
-                  <span class="left">JQUERY</span><span class="right">95%</span>
-                </li>
-                <li class="python">
-                  <span class="left">PYTHON</span><span class="right">60%</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------------------------------------------////////SKILL SECTION END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////TEAM SECTION START HERE////////---------------------------------------------->
-    <section class="team-section">
-      <h1 class="team-title all-section-title">Our Team</h1>
-      <div class="team-container">
-        <div class="team-left-section">
-          <div class="left-content">
-            <h1 class="team-about-title mode">
-              About Our <span>Team Members</span>
-            </h1>
-            <p class="team-about-desc mode">
-              We are Front End Web Developer Who Is Passionate About Making
-              Error Free Website With 100% Client Satisfaction. I Love To Solve
-              Real-World Problems. I Am Strategic, Goal Oriented And Always Work
-              With An End Goal In Mind.
-            </p>
-            <button class="team-contactus-btn">Contact Us</button>
-          </div>
-          <div class="three-dots">
-            <div class="one-dot all-dot">
-              <span style="--i: 0"></span>
-              <span style="--i: 1"></span>
-              <span style="--i: 2"></span>
-            </div>
-            <div class="two-dot all-dot">
-              <span style="--i: 0"></span>
-              <span style="--i: 1"></span>
-              <span style="--i: 2"></span>
-            </div>
-            <div class="three-dot all-dot">
-              <span style="--i: 0"></span>
-              <span style="--i: 1"></span>
-              <span style="--i: 2"></span>
-            </div>
-          </div>
-        </div>
-        <div class="team-right-section">
-          <div class="sifat">
-            <img
-              src="./img/team/sifat.jpg"
-              class="sifatimg team-all-img"
-              alt=""
-            />
-            <div class="box-content">
-              <h2 class="sifat-title">RHS Sifat</h2>
-              <p class="sifat-subtitle">Back-End Developer</p>
-            </div>
-            <div>
-              <button class="contact-btn team-all-btn">Contact</button>
-            </div>
-          </div>
-          <div class="sifat">
-            <img
-              src="./img/team/tanvir.jpg"
-              class="sifatimg team-all-img"
-              alt=""
-            />
-            <div class="box-content">
-              <h2 class="sifat-title">Tanvir Ahmed</h2>
-              <p class="sifat-subtitle">React Developer</p>
-            </div>
-            <div>
-              <button class="contact-btn team-all-btn">Contact</button>
-            </div>
-          </div>
-          <div class="sifat">
-            <img
-              src="./img/team/raj.jpg"
-              class="sifatimg team-all-img"
-              alt=""
-            />
-            <div class="box-content">
-              <h2 class="sifat-title">Tahsin Raj</h2>
-              <p class="sifat-subtitle">Graphic Designer</p>
-            </div>
-            <div>
-              <button class="contact-btn team-all-btn">Contact</button>
-            </div>
-          </div>
-          <div class="sifat">
-            <img
-              src="./img/team/siddik.jpg"
-              class="sifatimg team-all-img"
-              alt=""
-            />
-            <div class="box-content">
-              <h2 class="sifat-title">ABS Siddik</h2>
-              <p class="sifat-subtitle">UI UX Designer</p>
-            </div>
-            <div>
-              <button class="contact-btn team-all-btn">Contact</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------------------------------------------////////TEAM SECTION END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////PROJECT SECTION START HERE////////---------------------------------------------->
-    <section id="portfolio" class="project-section">
-      <h1 class="project-title all-section-title">projects</h1>
-      <div class="section">
-        <div class="btn-container">
-          <ul class="btn-list">
-            <li class="active fruits">Portfolio</li>
-            <li class="mouseenter flowers">Agency</li>
-            <li class="mouseenter trees">Ecommerce</li>
-            <li class="mouseenter birds">Booking</li>
+            <li><a href="./about.html" class="mode all">about</a></li>
           </ul>
         </div>
-      </div>
-      <div class="img-box">
-        <div id="container-1" class="img-container">
-          <img
-            class="portfolio-img"
-            src="./img/portfolio/portfolio (1).jpg"
-            alt=""
-          />
-          <img
-            class="portfolio-img"
-            src="./img/portfolio/portfolio (2).jpg"
-            alt=""
-          />
-          <img
-            class="portfolio-img"
-            src="./img/portfolio/portfolio (3).jpg"
-            alt=""
-          />
-          <img
-            class="portfolio-img"
-            src="./img/portfolio/portfolio (4).jpg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="img-box">
-        <div id="container-2" class="img-container hidden">
-          <img class="portfolio-img" src="./img/agency/agency (1).jpg" alt="" />
-          <img class="portfolio-img" src="./img/agency/agency (2).jpg" alt="" />
-          <img class="portfolio-img" src="./img/agency/agency (3).jpg" alt="" />
-          <img class="portfolio-img" src="./img/agency/agency (4).jpg" alt="" />
-        </div>
-      </div>
-      <div class="img-box">
-        <div id="container-3" class="img-container hidden">
-          <img
-            class="portfolio-img"
-            src="./img/ecommerce/ecommerce (1).jpg"
-            alt=""
-          />
-          <img
-            class="portfolio-img"
-            src="./img/ecommerce/ecommerce (2).jpg"
-            alt=""
-          />
-          <img
-            class="portfolio-img"
-            src="./img/ecommerce/ecommerce (3).jpg"
-            alt=""
-          />
-          <img
-            class="portfolio-img"
-            src="./img/ecommerce/ecommerce (4).jpg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="img-box">
-        <div id="container-4" class="img-container hidden">
-          <img
-            class="portfolio-img"
-            src="./img/booking/booking (1).jpg"
-            alt=""
-          />
-          <img
-            class="portfolio-img"
-            src="./img/booking/booking (2).jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-    <!------------------------------------------////////PROJECT SECTION END HERE////////---------------------------------------------->
+      </section>
+      <!--//////// MOBILE NAV MENU SECTION END HERE////////-->
 
-    <!------------------------------------------////////SERVICE SECTION START HERE////////---------------------------------------------->
-    <section id="service" class="service-section">
-      <h1 class="service-title all-section-title">Services</h1>
-      <div class="service-container">
-        <div class="card-1 allcard">
-          <i class="fa fa-globe"></i>
-          <h1>Create Website</h1>
-          <p>
-            I can create a professional and eyecatching website for you. With 3
-            years of experience I'm ready to fullfill your requirements.
-          </p>
-        </div>
-        <div class="card-2 allcard">
-          <i class="fa fa-gear"></i>
-          <h1>Customize Theme</h1>
-          <p>
-            I can customize any kind of wordpress theme. If you want to
-            customize your theme then you can contact me. 100% satisfaction
-            guarantee.
-          </p>
-        </div>
-        <div class="card-3 allcard">
-          <i class="fa fa-wrench"></i>
-          <h1>BUG Fixing</h1>
-          <p>
-            I can fix wordpress website bugs. Can migrate website local to live
-            server. Can fix theme bugs, plugin bugs, import export bugs.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!------------------------------------------////////SERVICE SECTION END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////PRICING SECTION START HERE////////---------------------------------------------->
-    <section class="pricing-section">
-      <h1 class="pricing-title all-section-title">pricing plan</h1>
-      <div class="pricing-container">
-        <div class="basic pricing-box">
-          <div>
-            <h2>basic</h2>
-            <h3>$199.<sub>99</sub></h3>
-            <p>5 Pages Design</p>
-            <div class="devider"></div>
-            <p>SEO Optimized</p>
-            <div class="devider"></div>
-            <p>100% Error free</p>
-            <div class="devider"></div>
-            <p>7 Times Revision</p>
-            <div class="devider"></div>
-          </div>
-          <div class="get-it-btn">
-            <button>Get it now</button>
-          </div>
-        </div>
-        <div class="standard pricing-box">
-          <div>
-            <h2>standard</h2>
-            <h3>$299.<sub>99</sub></h3>
-            <p>7 Pages Design</p>
-            <div class="devider"></div>
-            <p>SEO Optimized</p>
-            <div class="devider"></div>
-            <p>100% Error free</p>
-            <div class="devider"></div>
-            <p>15 Times Revision</p>
-            <div class="devider"></div>
-          </div>
-          <div class="get-it-btn">
-            <button>Get it now</button>
-          </div>
-        </div>
-        <div class="premium pricing-box">
-          <div>
-            <h2>premium</h2>
-            <h3>$399.<sub>99</sub></h3>
-            <p>10 Pages Design</p>
-            <div class="devider"></div>
-            <p>SEO Optimized</p>
-            <div class="devider"></div>
-            <p>100% Error free</p>
-            <div class="devider"></div>
-            <p>Unlimited Revision</p>
-            <div class="devider"></div>
-          </div>
-          <div class="get-it-btn">
-            <button>Get it now</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------------------------------------------////////PRICING SECTION END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////CONTACT SECTION START HERE////////---------------------------------------------->
-
-    <section id="contact" class="test">
-      <div class="contact-section">
-        <h1 class="contact-title all-section-title">get in touch</h1>
-        <div class="contact-form">
-          <div class="glass"></div>
-          <div class="glass-right">
-            <div class="name">
-              <input
-                type="text"
-                placeholder="First Name"
-                class="firstname bg"
-              />
-              <input type="text" placeholder="Last Name" class="lastname bg" />
-              <input type="text" placeholder="Email" class="email bg" />
-            </div>
-            <div class="msg">
-              <textarea placeholder="Messages" class="messages bg"></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------------------------------------------////////CONTACT SECTION END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////FOOTER SECTION START HERE////////---------------------------------------------->
-    <section id="footer" class="footer-section">
-      <div class="footer-container">
-        <div class="follow">
-          <h1>follow on</h1>
-        </div>
-        <div class="footer-social-icons">
+      <!------------------------------------------////////HERO SECTION START HERE////////---------------------------------------------->
+      <section class="hero-section">
+        <div class="socials">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-linkedin"></a>
           <a href="#" class="fa fa-instagram"></a>
           <a href="#" class="fa fa-twitter"></a>
         </div>
-        <div class="copyright">
-          <h6 class="gmail">mrvivek@gmail.com</h6>
-          <p>© Copyright-All Rights Reserved by <span>𝓥𝓲𝓿𝓮𝓴</span></p>
+
+        <div class="location-container">
+          <div class="location-icon">
+            <i class="fa fa-globe"></i>
+          </div>
+          <div class="location-name">
+            <h4>Located in the</h4>
+            <h4>Bangladesh</h4>
+          </div>
         </div>
+
+        <div class="left-section">
+          <div class="hero">
+            <div class="profile-container" oncontextmenu="return false">
+              <img class="text-circle" src="./img/text.png" alt="image" />
+              <img class="img-vivek" src="./img/vivekfull.png" alt="image" />
+              <div class="active-text">
+                <p>active now</p>
+              </div>
+              <div class="active-dot">
+                <div class="dot">
+                  <span style="--i: 0"></span>
+                  <span style="--i: 1"></span>
+                </div>
+              </div>
+            </div>
+            <h2 class="upper-subtitle mode">hi, my name is</h2>
+            <h1 class="main-title"><span class="v">v</span>ivek Anando</h1>
+            <div class="autotyping">
+              I'm a <span class="typing_text"></span>
+            </div>
+            <p class="description-me mode">
+              I'm a front end web developer who is passionate about making error
+              free website with 100% client satisfaction.I love to solve
+              real-world problems.I am strategic, goal oriented and always work
+              with an end goal in mind.
+            </p>
+          </div>
+          <div>
+            <a href="#"
+              ><button class="hireme-button all-btn box" type="button">
+                hire me
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="right-section" oncontextmenu="return false">
+          <div class="right-content">
+            <img src="./img/vivekfull.png" alt="image" />
+          </div>
+        </div>
+      </section>
+      <!--------CLICK TO DOWN BUTTON START HERE-------->
+      <div class="scroll-to-bottom">
+        <a>
+          <div class="icon-box">
+            <div class="icon"></div>
+          </div>
+        </a>
       </div>
-    </section>
-    <!------------------------------------------////////FOOTER SECTION END HERE////////---------------------------------------------->
+      <!--------CLICK TO BOTTOM BUTTON END HERE-------->
+      <!------------------------------------------////////HERO SECTION END HERE////////---------------------------------------------->
+      <!------------------------------------------////////SKILL SECTION START HERE////////---------------------------------------------->
+      <section class="skill-section">
+        <h1 class="skill-section-title all-section-title">skills</h1>
+        <div class="skill-content">
+          <div class="skill-left-section">
+            <h1 class="progress-title">CMS <span>KNOWLEDGE</span></h1>
+            <div class="skill-container">
+              <div class="progress-bar">
+                <ul class="progress">
+                  <li class="wp">
+                    <span class="left">WORDPRESS</span
+                    ><span class="right">85%</span>
+                  </li>
+                  <li class="ep">
+                    <span class="left">ELEMENTOR PRO</span
+                    ><span class="right">90%</span>
+                  </li>
+                  <li class="divi">
+                    <span class="left">DIVI</span><span class="right">85%</span>
+                  </li>
+                  <li class="vc">
+                    <span class="left">WOOCOMMERCE</span
+                    ><span class="right">80%</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="skill-right-section">
+            <h1 class="progress-title">CODING <span>KNOWLEDGE</span></h1>
+            <div class="skill-container">
+              <div class="progress-bar">
+                <ul class="progress">
+                  <li class="html">
+                    <span class="left">HTML</span><span class="right">95%</span>
+                  </li>
+                  <li class="css">
+                    <span class="left">CSS & SASS</span
+                    ><span class="right">90%</span>
+                  </li>
+                  <li class="tailwind">
+                    <span class="left">TAILWIND</span
+                    ><span class="right">80%</span>
+                  </li>
+                  <li class="js">
+                    <span class="left">JAVASCRIPT</span
+                    ><span class="right">70%</span>
+                  </li>
+                  <li class="jquery">
+                    <span class="left">JQUERY</span
+                    ><span class="right">95%</span>
+                  </li>
+                  <li class="python">
+                    <span class="left">PYTHON</span
+                    ><span class="right">60%</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------////////SKILL SECTION END HERE////////---------------------------------------------->
 
-    <div class="location-container">
-      <div class="location-icon">
-        <i class="fa fa-globe"></i>
+      <!------------------------------------------////////TEAM SECTION START HERE////////---------------------------------------------->
+      <section class="team-section">
+        <h1 class="team-title all-section-title">Our Team</h1>
+        <div class="team-container">
+          <div class="team-left-section">
+            <div class="left-content">
+              <h1 class="team-about-title mode">
+                About Our <span>Team Members</span>
+              </h1>
+              <p class="team-about-desc mode">
+                We are Front End Web Developer Who Is Passionate About Making
+                Error Free Website With 100% Client Satisfaction. I Love To
+                Solve Real-World Problems. I Am Strategic, Goal Oriented And
+                Always Work With An End Goal In Mind.
+              </p>
+              <button class="team-contactus-btn">Contact Us</button>
+            </div>
+            <div class="three-dots">
+              <div class="one-dot all-dot">
+                <span style="--i: 0"></span>
+                <span style="--i: 1"></span>
+                <span style="--i: 2"></span>
+              </div>
+              <div class="two-dot all-dot">
+                <span style="--i: 0"></span>
+                <span style="--i: 1"></span>
+                <span style="--i: 2"></span>
+              </div>
+              <div class="three-dot all-dot">
+                <span style="--i: 0"></span>
+                <span style="--i: 1"></span>
+                <span style="--i: 2"></span>
+              </div>
+            </div>
+          </div>
+          <div class="team-right-section">
+            <div class="sifat">
+              <img
+                src="./img/team/sifat.jpg"
+                class="sifatimg team-all-img"
+                alt=""
+              />
+              <div class="box-content">
+                <h2 class="sifat-title">RHS Sifat</h2>
+                <p class="sifat-subtitle">Back-End Developer</p>
+              </div>
+              <div>
+                <button class="contact-btn team-all-btn">Contact</button>
+              </div>
+            </div>
+            <div class="sifat">
+              <img
+                src="./img/team/tanvir.jpg"
+                class="sifatimg team-all-img"
+                alt=""
+              />
+              <div class="box-content">
+                <h2 class="sifat-title">Tanvir Ahmed</h2>
+                <p class="sifat-subtitle">React Developer</p>
+              </div>
+              <div>
+                <button class="contact-btn team-all-btn">Contact</button>
+              </div>
+            </div>
+            <div class="sifat">
+              <img
+                src="./img/team/raj.jpg"
+                class="sifatimg team-all-img"
+                alt=""
+              />
+              <div class="box-content">
+                <h2 class="sifat-title">Tahsin Raj</h2>
+                <p class="sifat-subtitle">Graphic Designer</p>
+              </div>
+              <div>
+                <button class="contact-btn team-all-btn">Contact</button>
+              </div>
+            </div>
+            <div class="sifat">
+              <img
+                src="./img/team/siddik.jpg"
+                class="sifatimg team-all-img"
+                alt=""
+              />
+              <div class="box-content">
+                <h2 class="sifat-title">ABS Siddik</h2>
+                <p class="sifat-subtitle">UI UX Designer</p>
+              </div>
+              <div>
+                <button class="contact-btn team-all-btn">Contact</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------////////TEAM SECTION END HERE////////---------------------------------------------->
+
+      <!------------------------------------------////////PROJECT SECTION START HERE////////---------------------------------------------->
+      <section id="portfolio" class="project-section">
+        <h1 class="project-title all-section-title">projects</h1>
+        <div class="section">
+          <div class="btn-container">
+            <ul class="btn-list">
+              <li class="active fruits">Portfolio</li>
+              <li class="mouseenter flowers">Agency</li>
+              <li class="mouseenter trees">Ecommerce</li>
+              <li class="mouseenter birds">Booking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="img-box">
+          <div id="container-1" class="img-container">
+            <img
+              class="portfolio-img"
+              src="./img/portfolio/portfolio (1).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/portfolio/portfolio (2).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/portfolio/portfolio (3).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/portfolio/portfolio (4).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="img-box">
+          <div id="container-2" class="img-container hidden">
+            <img
+              class="portfolio-img"
+              src="./img/agency/agency (1).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/agency/agency (2).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/agency/agency (3).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/agency/agency (4).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="img-box">
+          <div id="container-3" class="img-container hidden">
+            <img
+              class="portfolio-img"
+              src="./img/ecommerce/ecommerce (1).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/ecommerce/ecommerce (2).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/ecommerce/ecommerce (3).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/ecommerce/ecommerce (4).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="img-box">
+          <div id="container-4" class="img-container hidden">
+            <img
+              class="portfolio-img"
+              src="./img/booking/booking (1).jpg"
+              alt=""
+            />
+            <img
+              class="portfolio-img"
+              src="./img/booking/booking (2).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------////////PROJECT SECTION END HERE////////---------------------------------------------->
+
+      <!------------------------------------------////////SERVICE SECTION START HERE////////---------------------------------------------->
+      <section id="service" class="service-section">
+        <h1 class="service-title all-section-title">Services</h1>
+        <div class="service-container">
+          <div class="card-1 allcard">
+            <i class="fa fa-globe"></i>
+            <h1>Create Website</h1>
+            <p>
+              I can create a professional and eyecatching website for you. With
+              3 years of experience I'm ready to fullfill your requirements.
+            </p>
+          </div>
+          <div class="card-2 allcard">
+            <i class="fa fa-gear"></i>
+            <h1>Customize Theme</h1>
+            <p>
+              I can customize any kind of wordpress theme. If you want to
+              customize your theme then you can contact me. 100% satisfaction
+              guarantee.
+            </p>
+          </div>
+          <div class="card-3 allcard">
+            <i class="fa fa-wrench"></i>
+            <h1>BUG Fixing</h1>
+            <p>
+              I can fix wordpress website bugs. Can migrate website local to
+              live server. Can fix theme bugs, plugin bugs, import export bugs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------////////SERVICE SECTION END HERE////////---------------------------------------------->
+
+      <!------------------------------------------////////PRICING SECTION START HERE////////---------------------------------------------->
+      <section class="pricing-section">
+        <h1 class="pricing-title all-section-title">pricing plan</h1>
+        <div class="pricing-container">
+          <div class="basic pricing-box">
+            <div>
+              <h2>basic</h2>
+              <h3>$199.<sub>99</sub></h3>
+              <p>5 Pages Design</p>
+              <div class="devider"></div>
+              <p>SEO Optimized</p>
+              <div class="devider"></div>
+              <p>100% Error free</p>
+              <div class="devider"></div>
+              <p>7 Times Revision</p>
+              <div class="devider"></div>
+            </div>
+            <div class="get-it-btn">
+              <button>Get it now</button>
+            </div>
+          </div>
+          <div class="standard pricing-box">
+            <div>
+              <h2>standard</h2>
+              <h3>$299.<sub>99</sub></h3>
+              <p>7 Pages Design</p>
+              <div class="devider"></div>
+              <p>SEO Optimized</p>
+              <div class="devider"></div>
+              <p>100% Error free</p>
+              <div class="devider"></div>
+              <p>15 Times Revision</p>
+              <div class="devider"></div>
+            </div>
+            <div class="get-it-btn">
+              <button>Get it now</button>
+            </div>
+          </div>
+          <div class="premium pricing-box">
+            <div>
+              <h2>premium</h2>
+              <h3>$399.<sub>99</sub></h3>
+              <p>10 Pages Design</p>
+              <div class="devider"></div>
+              <p>SEO Optimized</p>
+              <div class="devider"></div>
+              <p>100% Error free</p>
+              <div class="devider"></div>
+              <p>Unlimited Revision</p>
+              <div class="devider"></div>
+            </div>
+            <div class="get-it-btn">
+              <button>Get it now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------////////PRICING SECTION END HERE////////---------------------------------------------->
+
+      <!------------------------------------------////////CONTACT SECTION START HERE////////---------------------------------------------->
+
+      <section id="contact" class="test">
+        <div class="contact-section">
+          <h1 class="contact-title all-section-title">get in touch</h1>
+          <div class="contact-form">
+            <div class="glass"></div>
+            <div class="glass-right">
+              <div class="name">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="firstname bg"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="lastname bg"
+                />
+                <input type="text" placeholder="Email" class="email bg" />
+              </div>
+              <div class="msg">
+                <textarea placeholder="Messages" class="messages bg"></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------////////CONTACT SECTION END HERE////////---------------------------------------------->
+
+      <!------------------------------------------////////FOOTER SECTION START HERE////////---------------------------------------------->
+      <section id="footer" class="footer-section">
+        <div class="footer-container">
+          <div class="follow">
+            <h1>follow on</h1>
+          </div>
+          <div class="footer-social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+          <div class="copyright">
+            <h6 class="gmail">mrvivek@gmail.com</h6>
+            <p>© Copyright-All Rights Reserved by <span>𝓥𝓲𝓿𝓮𝓴</span></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="portfolio-fixed-text">
+        <h6 class="text-before">W.</h6>
+        <h6 class="main-text">PORTFOLIO</h6>
       </div>
-      <div class="location-name">
-        <h4>Located in the</h4>
-        <h4>Bangladesh</h4>
-      </div>
-    </div>
+      <!------------------------------------------////////PORTFOLIO FIXED TEXT END HERE////////---------------------------------------------->
 
-    <!------------------------------------------////////PORTFOLIO FIXED TEXT START HERE////////---------------------------------------------->
-    <div class="portfolio-fixed-text">
-      <h6 class="text-before">W.</h6>
-      <h6 class="main-text">PORTFOLIO</h6>
-    </div>
-    <!------------------------------------------////////PORTFOLIO FIXED TEXT END HERE////////---------------------------------------------->
+      <!------------------------------------------////////CURSOR START HERE////////---------------------------------------------->
+      <!-- <div class="cursor-outline"></div>
+      <img src="./img/cursor.png" alt="image" class="cursor-point" /> -->
+      <!-- <div class="cursor-point"></div> -->
+      <!------------------------------------------////////CURSOR END HERE////////---------------------------------------------->
 
-    <!------------------------------------------////////SOCIALS LINKS START HERE////////---------------------------------------------->
-    <div class="socials">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-twitter"></a>
-    </div>
-    <!------------------------------------------////////SOCIALS LINKS END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////DARK MODE START HERE////////---------------------------------------------->
-
-    <div class="darkmode">
-      <img src="./img/darkmode/light.png" class="light-image bothimg" alt="" />
-      <img src="./img/darkmode/dark.png" class="dark-image bothimg" alt="" />
-    </div>
-    <!------------------------------------------////////DARK MODE END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////CURSOR START HERE////////---------------------------------------------->
-    <div class="cursor-outline">
-    </div>
-    <img src="./img/cursor.png" alt="image" class="cursor-point">
-    <!-- <div class="cursor-point"></div> -->
-    <!------------------------------------------////////CURSOR END HERE////////---------------------------------------------->
-
-    <!------------------------------------------////////CLICK TO TOP BUTTON START HERE////////---------------------------------------------->
-    <div class="arrow-btn">
-      <a href="#top" class="fa fa-arrow-up"></a>
-    </div>
-    <!------------------------------------------////////CLICK TO TOP BUTTON END HERE////////---------------------------------------------->
+      <!------------------------------------------////////CLICK TO TOP BUTTON START HERE////////---------------------------------------------->
+      <!-- <div class="arrow-btn">
+        <a href="#top" class="fa fa-arrow-up"></a>
+      </div> -->
+      <!------------------------------------------////////CLICK TO TOP BUTTON END HERE////////---------------------------------------------->
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/index.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/particles.js"></script>

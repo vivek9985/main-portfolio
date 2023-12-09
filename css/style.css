@@ -14,17 +14,18 @@ body {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   background: #fffaf1;
+  /* background: #1c1c1c; */
   user-select: none;
-  cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoCAAAFgAAACgAAAAgAAAAQAAAAAEACAAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAP8IAP8RAAAA/+YABP8AAAD/iAAAav8AAP+3AACi/wALCxIAAHP/APL/AAAA6v8AALv/AACV/wDQ/wAAAP8RAAD/9wAAe/8AACb/AABV/wAAAP8A/8gAAP/3AAAA+/8AAP8aAF7/AAAA/1EA/wCzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAFQAAAA4AAAAAAAAVABgAAAAAAAAAAAAAAAAAAAAAAAAGEQAADAAJAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABEEAAAZAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAsACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVAAAcCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAAAkAAAAJCQkJAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAACQAACQAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAKAAAACQkcAgsZDA4VABUAAAAAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBRsBGg8WAAAEEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBEGFQAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////////////////////////////////////////////8/////H////w////cPH//zDg//8Q5P//AOD//wDx//8A////AP///wH///8DgH//AwA//wAAH/4AAB/+AAf//AAD//wAAf/4AAD/+Af///Af///wf///8f////"),
-    auto;
-  /* cursor: url(../img/cursor.ico), auto; */
+  cursor: url(../img/cursor.ico), auto;
   overflow-x: hidden;
 }
 :root {
   --purple: #7f2ae0;
+  /* --purple: #c9f31d; */
   --pink: #f31545;
   --green: #73e850;
-  --yellow: rgb(248, 207, 95);
+  /* --yellow: rgb(248, 207, 95); */
+  --yellow: #c9f31d;
   --orange: rgb(214, 73, 45);
 }
 /* ---------------------------SCROLLBAR STYLE START HERE--------------------------- */
@@ -53,12 +54,12 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  cursor: none;
   transition: all 0.2s ease;
 }
 .all-btn:hover {
   background-color: rgb(19, 75, 226);
   color: rgb(255, 255, 255);
+  cursor: url(../img/pointer.png), auto;
 }
 .all-section-title {
   font-size: 35px;
@@ -87,6 +88,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 .site-logo {
   transition: all 0.5s ease;
@@ -102,7 +104,7 @@ header {
   text-transform: capitalize;
   color: #1c1c1c;
   letter-spacing: 2px;
-  cursor: none;
+  cursor: url(../img/pointer.png), auto;
 }
 .logo .first-v {
   font-size: 50px;
@@ -119,7 +121,7 @@ header {
 /*======== NAVIGATON MAIN MENU SRART  ========*/
 nav,
 .img-logo {
-  cursor: none;
+  cursor: pointer;
 }
 nav ul li a {
   font-size: 12px;
@@ -150,7 +152,6 @@ nav ul li a {
 li,
 a {
   transition: all 0.5s ease;
-  cursor: none;
 }
 /*======== NAVIGATON MAIN MENU END  ========*/
 .contact-button i {
@@ -208,8 +209,8 @@ a {
   justify-content: center;
   gap: 10px;
   padding: 5px 20px;
-  bottom: 60px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   font-size: 10px;
   background-color: #1c1c1c;
   color: #fffaf1;
@@ -255,7 +256,7 @@ a {
 
 /* ---------------------------SOCIAL LINK STYLE START HERE--------------------------- */
 .socials {
-  position: fixed;
+  position: absolute;
   width: 30px;
   height: 160px;
   top: 0;
@@ -293,17 +294,19 @@ a {
   align-items: center;
   justify-content: space-around;
   border-radius: 50px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  left: 20px;
-  bottom: 20px;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 .darkmode img {
   width: 21px;
   height: 21px;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.9s ease;
+  transition: all 0.4s linear;
 }
 .darkmode img:hover {
   transform: rotate(360deg);
@@ -312,8 +315,8 @@ a {
 
 /* ----------------------------CLICK TO TOP BUTTON STYLE START HERE------------------------------- */
 .arrow-btn {
-  display: none;
-  position: fixed;
+  /* display: none; */
+  position: absolute;
   z-index: 1;
   right: 20px;
   bottom: 20px;
@@ -324,7 +327,7 @@ a {
   padding: 8px;
   color: black;
   font-size: 18px;
-  animation: arrow 2s ease-out infinite;
+  animation: arrow 2s ease infinite;
 }
 @keyframes arrow {
   10% {
@@ -347,6 +350,7 @@ a {
 
 /* ---------------------------HERO SECTION STYLE START HERE--------------------------- */
 .hero-section {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -365,7 +369,7 @@ a {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  cursor: none;
+  cursor: url(../img/pointer.png), auto;
 }
 .text-circle {
   width: 100%;
@@ -428,7 +432,6 @@ a {
   border-radius: 100px;
   background: rgb(72, 236, 72);
   margin: 20px;
-  cursor: pointer;
 }
 .active-dot span {
   position: absolute;
@@ -975,8 +978,10 @@ h1.main-title {
 /* IMAGE SECTION START HERE */
 .img-container {
   display: flex;
+  width: 80%;
+  margin: auto;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   margin-top: 40px;
 }
 img.portfolio-img {
